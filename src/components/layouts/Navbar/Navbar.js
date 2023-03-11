@@ -1,12 +1,12 @@
 import { Link } from 'react-router-dom'
-import styles from "./Assets/Navbar.module.css"
-import home_button from "../images/botao-de-inicio-changed.png"
-import Container from './Container';
-import search from "../images/search-changed.png"
-import promocoes from "../images/etiqueta-de-desconto-changed.png"
-import news from "../images/etiqueta-de-preco-changed.png"
-import carrinho from "../images/shopping-cart-changed.png"
-import perfil from "../images/perfil-de-usuario-changed.png"
+import styles from "./Navbar.module.css"
+import home_button from "../../../assets/botao-de-inicio-changed.png"
+import Container from '../Container/Container';
+import search from "../../../assets/search-changed.png"
+import promocoes from "../../../assets/etiqueta-de-desconto-changed.png"
+import news from "../../../assets/etiqueta-de-preco-changed.png"
+import carrinho from "../../../assets/shopping-cart-changed.png"
+import perfil from "../../../assets/perfil-de-usuario-changed.png"
 
 function Navbar(){
     return (

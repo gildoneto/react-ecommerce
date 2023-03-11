@@ -1,6 +1,6 @@
 import React from "react";
-import FormLogin from '../forms/login/FormLogin'
-import styles from '../forms/cadastro/FormCadastro.module.css'
+import FormLogin from '../../components/forms/Login/FormLogin'
+import styles from '../../components/forms/Cadastro/FormCadastro.module.css'
 
 function Cadastro() {
     return(

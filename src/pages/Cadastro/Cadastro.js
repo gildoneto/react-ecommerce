@@ -1,6 +1,6 @@
 import React from "react";
-import FormUsuario from '../forms/cadastro/FormCadastro'
-import styles from '../forms/cadastro/FormCadastro.module.css'
+import FormUsuario from '../../components/forms/Cadastro/FormCadastro'
+import styles from '../../components/forms/Cadastro/FormCadastro.module.css'
 
 function Cadastro() {
     return(

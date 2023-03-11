@@ -1,6 +1,6 @@
 import React from 'react'
 import {useState} from "react"
-import FormInput from '../cadastro/FormInput';
+import FormInput from './FormInput';
 import "./FormCadastro.module.css"
 import { Link } from 'react-router-dom';
 

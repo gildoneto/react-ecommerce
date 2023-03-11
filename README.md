@@ -1,72 +1,50 @@
-# Getting Started with Create React App
+# Sugestões de melhorias
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## 1. Gerenciador de pacotes
 
-## Available Scripts
+Conversem entre vocês para determinar que gerenciador de pacotes deverá ser usado no projeto, ou só `npm`ou só `yarn`.
 
-In the project directory, you can run:
+## 2. Alterar o favicon e título do projeto
 
-### `npm start`
+Link de como fazer -> https://blog.cod3r.com.br/como-adicionar-um-favicon-ao-seu-projeto/
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## 3. Padronizar a estrutra de pastas do projeto
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+Não existe uma forma de estrutura definitiva na comunidade, o que é unânime é que a estrutura tenha uma lógica e siga um padrão lógico.
 
-### `npm test`
+Aqui vai duas sugestões de leitura:
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+- https://www.freecodecamp.org/portuguese/news/uma-maneira-melhor-de-estruturar-projetos-em-react/
+- https://medium.com/reactbrasil/react-estruturando-projetos-e-nomeando-componentes-b62ddad69a11
 
-### `npm run build`
+Estou alterando o projeto para ficar desta forma a partir do diretório `src`:
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+```shell
+$ tree
+.src
+├── assets # todas as imagens usadas no projeto
+│   ├── botao-de-inicio-changed.png
+│   └── outras-imagens...
+├── components # todo e qualquer componente que não seja uma rota/page
+│   └── forms
+│       ├── Cadastro
+│       │   ├── FormCadastro.jsx
+│       │   ├── FormCadastro.module.css
+│       │   └── FormInput.jsx
+│       └── Login
+├── pages # todas os componentes react que são uma rota na url
+│   ├── Cadastro
+│   │   ├── Cadastro.js
+│   │   └── Cadastro.module.css
+│   ├── Home
+│   ├── Login
+│   ├── Perfil
+```
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+Percebam que toda pasta que tem um componente react está com a [nomenclatura padrão](https://www.alura.com.br/artigos/boas-praticas-escrever-codigo-react-js) que é a `PascalCase`. E dentro da pasta do componente, coloquei o arquivo javascript ou JSX junto com seu arquivo de CSS.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+Qualquer dúvida me pinguem.
 
-### `npm run eject`
+Atenciosamente,
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
-# Ewerton
-# UPE-2022.2-Equipe06
+Gildo Neto
