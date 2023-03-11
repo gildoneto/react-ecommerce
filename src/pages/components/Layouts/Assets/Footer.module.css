@@ -1,0 +1,42 @@
+.footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+    background-color: #D3D3D3	;
+    color: #3E3D62;
+    padding: 3em;
+    list-style: none;  
+
+    position: fixed;
+    width: 100%;  
+    bottom: 0;
+}
+
+.footer .social_list{
+    display: flex;
+    justify-content: start;
+    list-style-type: none;
+}
+.footer .social_list li {
+    margin: 0 1em;
+}
+
+.footer .social_list li svg {
+    font-size: 25px;
+}
+
+.footer .contactContainer {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    
+}
+
+.footer .contactContainer .contact {   
+    font-weight: bold;
+    text-decoration: none;
+    margin-right: 1.5em;
+}
+
+
